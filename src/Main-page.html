@@ -10,6 +10,96 @@
 </head>
 
 <body class="font-['Roboto']">
+    <style>
+        #text-gradient-hover:hover{
+            color: transparent;
+            background: radial-gradient(circle, #323232, #323232, #EFA35A, #EFA35A, #EFA35A, #EFA35A);
+            background-clip: text;
+            -webkit-background-clip: text;
+            background-size: 400%;
+            animation: gradientShift 4s infinite linear;
+        }
 
+        #button-gradient-hover:hover{
+            background: radial-gradient(circle, #323232, #EFA35A, #EFA35A,  #EFA35A, #EFA35A, #EFA35A);
+            background-size: 500%;
+            animation: gradientShift 6s infinite linear;
+        }
+
+        @keyframes gradientShift {
+            0% {background-position: 0% 0%;}
+            100% {background-position: 500% 500%;}
+        }
+
+    </style>
+
+    <header>
+        <nav class="bg-[#FDFDFD] border-b-[#E3E3E3] py-[18px] border-b-[1px]">
+            <div class="lg:w-[90%] w-[80%] m-auto flex items-center justify-between">
+                <img src="./Photo/Layer_x0020_1.png" alt="">
+                <ul class="lg:flex text-[18px] font-[400] gap-[25px] hidden items-center">
+                    <select style="transition: transform 0.3s ease;" id="text-gradient-hover" class="hover:scale-[1.15] cursor-pointer bg-transparent"><option>Наши проекты</option></select>
+                    <select style="transition: transform 0.3s ease;" id="text-gradient-hover" class="hover:scale-[1.15] cursor-pointer bg-transparent"><option>Дома</option></select>
+                    <li style="transition: transform 0.3s ease;" id="text-gradient-hover" class="hover:scale-[1.15] cursor-pointer">Ипотека</li>
+                    <select style="transition: transform 0.3s ease;" id="text-gradient-hover" class="hover:scale-[1.15] cursor-pointer bg-transparent"><option>О компании</option></select>
+                    <li style="transition: transform 0.3s ease;" id="text-gradient-hover" class="hover:scale-[1.15] cursor-pointer">Контакты</li>
+                </ul>
+                <div class="lg:flex hidden items-center gap-[10px]">
+                    <i class="text-[25px] text-[#EFA35A] fa-solid fa-phone"></i>
+                    <p class="lg:block hidden text-[18px] font-[400]">+7 (962) 555-25-25</p>
+                </div>
+                <button style="transition: transform 0.3s ease;" id="button-gradient-hover" class="lg:inline hidden border-[1px] hover:text-white hover:scale-[1.08] border-[#EFA35A] w-[202px] h-[53px] text-black text-[18px] font-[400] bg-transparent">Заказать звонок</button>
+                <div class="flex items-center gap-[20px] lg:hidden">
+                    <i class="text-[20px] cursor-pointer text-[#EFA35A] fa-solid fa-phone"></i>
+                    <i class="text-[25px] cursor-pointer text-[#EFA35A] fa-solid fa-bars"></i>
+                </div>
+            </div>
+        </nav>
+        
+        <section class="bg-[#F7F8F8] lg:py-[100px] py-[80px]">
+            <div class="lg:w-[90%] w-[80%] m-auto flex lg:flex-row flex-col gap-[80px] lg:gap-0 items-start justify-between">
+                <aside class="flex flex-col items-start gap-[40px]">
+                    <h1 class="uppercase text-[30px] lg:text-[60px] font-[500] leading-[38px] lg:leading-[75px]">Центральный <br class="lg:hidden"> офис <br class="hidden lg:block"> продаж <span class="text-[#EFA35A]"> <br class="lg:hidden">Win Dom</span></h1>
+                    <h4 class="lg:text-[32px] text-[20px] lg:leading-[38px] leading-[23px] font-[400]">Республика Татарстан, <br class="lg:hidden"> г. Казань ул. Яркая, д.31Б</h4>
+                    <div class="flex lg:flex-row flex-col items-center gap-[20px] lg:gap-[80px]">
+                        <div class="flex items-center gap-[5px]">
+                            <img src="./Photo/ph_phone.png" alt="" class="w-[25px]">
+                            <p class="lg:text-[24px] text-[16px] font-[500] lg:font-[400]">+7 (962) 555-25-25</p>
+                        </div>
+                        <div class="flex items-center gap-[5px]">
+                            <img src="./Photo/ph_phone.png" alt="" class="w-[25px]">
+                            <p class="lg:text-[24px] text-[16px] font-[500] lg:font-[400]">+7 (962) 591-79-60</p>
+                        </div>
+                    </div>
+                    <div class="text-[28px] text-[#414753] flex items-center gap-[20px]">
+                        <div style="transition: all 0.2s ease;" onclick="location.href='https://www.youtube.com/?themeRefresh=1'" class="w-[45px] hover:rounded-[8px] hover:scale-[1.2] hover:bg-[#414753] cursor-pointer h-[45px] border-[1px] border-[#414753] flex justify-center items-center"><i class="hover:scale-[1.2] transition-all duration-[0.2s] ease-in-out hover:text-[#EFA359] fa-brands fa-youtube"></i></div>
+                        <div style="transition: all 0.2s ease;" onclick="location.href='https://vk.com/'" class="w-[45px] hover:scale-[1.2] hover:rounded-[8px] hover:bg-[#414753] cursor-pointer h-[45px] border-[1px] border-[#414753] flex justify-center items-center"><i class="hover:scale-[1.2] hover:text-[#EFA359] transition-all duration-[0.2s] ease-in-out fa-brands fa-vk"></i></div>
+                        <div style="transition: all 0.2s ease;" onclick="location.href='https://ru.linkedin.com/'" class="w-[45px] hover:scale-[1.2] hover:rounded-[8px] hover:bg-[#414753] cursor-pointer h-[45px] border-[1px] border-[#414753] flex justify-center items-center"><i class="hover:scale-[1.2] transition-all duration-[0.2s] ease-in-out hover:text-[#EFA359] fa-brands fa-linkedin-in"></i></div>
+                        <div style="transition: all 0.2s ease;" onclick="location.href='https://www.whatsapp.com/'" class="w-[45px] hover:scale-[1.2] hover:rounded-[8px] hover:bg-[#414753] cursor-pointer h-[45px] border-[1px] border-[#414753] flex justify-center items-center"><i class="hover:scale-[1.2] hover:text-[#EFA359] transition-all duration-[0.2s] ease-in-out fa-brands fa-whatsapp"></i></div>
+                    </div>
+
+                    <div style="transition: all 0.3s ease;" class="lg:w-[417px] w-[242px] hover:shadow-[-6px_6px_10px_#EFA359] hover:translate-x-[5px] hover:translate-y-[-5px] h-[44px] lg:h-[57px] flex pl-[10px] lg:pl-[20px] gap-[10px] lg:gap-[18px] items-center border-[1px] border-[#EFA359]">
+                        <i class="text-[#EFA359] text-[25px] lg:text-[30px] fa-regular fa-envelope"></i>
+                        <p class="lg:text-[24px] text-[15px] font-[400]">windom.kazan@gmail.com</p>
+                    </div>
+                </aside>
+                
+                <aside style="transition: transform 0.3s ease;" class="lg:w-[492px] w-[300px] bg-white flex hover:scale-[1.05] flex-col gap-[30px] items-center text-center px-[10px] py-[50px]">
+                    <h1 class="lg:text-[40px] text-[25px] font-[500] leading-[10px] lg:leading-[30px]">Консультация</h1>
+                    <h3 class="lg:text-[24px] text-[15px] font-[400] leading-[17px] lg:leading-[28px]">Наш менеджер свяжется с вами в ближайшее время</h3>
+                    <form action="" class="flex flex-col gap-[20px]">
+                        <input class="bg-[#F7F8F8] w-[280px] lg:w-[448px] h-[46px] lg:h-[56px] outline-none pl-[20px] placeholder-[#555555] text-[14px] lg:text-[18px] font-[400]" type="text" placeholder="Ваше имя">
+                        <input class="bg-[#F7F8F8] w-[280px] lg:w-[448px] h-[46px] lg:h-[56px] outline-none pl-[20px] placeholder-[#555555] text-[14px] lg:text-[18px] font-[400]" type="tel" placeholder="Телефон">
+                        <input id="text-gradient-hover" type="submit" value="Получить консультацию" style="transition: all 0.2s ease;" class="self-center hover:scale-[0.96] cursor-pointer border-[1px] font-[700] text-[14px] lg:text-[18px] text-white bg-[#EFA359] border-[#EFA359] w-[221px] lg:w-[268px] h-[46px] lg:h-[51px]">
+                    </form>
+                    <p class="px-[10px] text-start text-[12px] lg:text-[15px] font-[400] leading-[18px]">Нажимая кнопку «Получить консультацию», вы подтверждаете свое <span class="text-[#EFA359] hover:underline"><a href="">согласие</a></span> на <span class="text-[#EFA359] hover:underline"><a href="">обработку персональных данных</a></span></p>
+                </aside>
+            </div>
+        </section>
+    </header>
+
+    <main>
+        
+    </main>
 </body>
 </html>
