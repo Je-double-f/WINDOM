@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./output.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./fontawesome-free-6.4.2-web/css/all.css">
+</head>
+
+<body class="font-['Roboto']">
+    <style>
+        #text-gradient-hover:hover{
+            color: transparent;
+            background: radial-gradient(circle, #323232, #323232, #EFA35A, #EFA35A, #EFA35A, #EFA35A);
+            background-clip: text;
+            -webkit-background-clip: text;
+            background-size: 400%;
+            animation: gradientShift 4s infinite linear;
+        }
+
+        #button-gradient-hover:hover{
+            background: radial-gradient(circle, #323232, #EFA35A, #EFA35A,  #EFA35A, #EFA35A, #EFA35A);
+            background-size: 500%;
+            animation: gradientShift 6s infinite linear;
+        }
+
+        @keyframes gradientShift {
+            0% {background-position: 0% 0%;}
+            100% {background-position: 500% 500%;}
+        }
+
+    </style>
+
+    <header>
+        <nav class="bg-[#FDFDFD] border-b-[#E3E3E3] py-[18px] border-b-[1px]">
+            <div class="max-w-[90%] mx-[auto]">
+                <div class="lg:w-[90%] w-[80%] m-auto flex items-center justify-between">
+                    <img src="./Photo/Layer_x0020_1.png" alt="">
+                    <ul class="lg:flex text-[18px] font-[400] gap-[25px] hidden items-center">
+                        <select style="transition: transform 0.3s ease;" id="text-gradient-hover" class="hover:scale-[1.15] cursor-pointer bg-transparent"><option>Наши проекты</option></select>
+                        <select style="transition: transform 0.3s ease;" id="text-gradient-hover" class="hover:scale-[1.15] cursor-pointer bg-transparent"><option>Дома</option></select>
+                        <li style="transition: transform 0.3s ease;" id="text-gradient-hover" class="hover:scale-[1.15] cursor-pointer">Ипотека</li>
+                        <select style="transition: transform 0.3s ease;" id="text-gradient-hover" class="hover:scale-[1.15] cursor-pointer bg-transparent"><option>О компании</option></select>
+                        <li style="transition: transform 0.3s ease;" id="text-gradient-hover" class="hover:scale-[1.15] cursor-pointer">Контакты</li>
+                    </ul>
+                    <div class="lg:flex hidden items-center gap-[10px]">
+                        <i class="text-[25px] text-[#EFA35A] fa-solid fa-phone"></i>
+                        <p class="lg:block hidden text-[18px] font-[400]">+7 (962) 555-25-25</p>
+                    </div>
+                    <button style="transition: transform 0.3s ease;" id="button-gradient-hover" class="lg:inline hidden border-[1px] hover:text-white hover:scale-[1.08] border-[#EFA35A] w-[202px] h-[53px] text-black text-[18px] font-[400] bg-transparent">Заказать звонок</button>
+                    <div class="flex items-center gap-[20px] lg:hidden">
+                        <i class="text-[20px] cursor-pointer text-[#EFA35A] fa-solid fa-phone"></i>
+                        <i class="text-[25px] cursor-pointer text-[#EFA35A] fa-solid fa-bars"></i>
+                    </div>
+                </div>
+            </div>
+        </nav>
+
+        <hr class=" mb-[70px]">
+        <div class="max-w-[90%] mx-auto flex gap-[40px] items-start justify-between">
+            <h1 class="text-[30px] font-[500] lg:text-[46px] lg:font-[700] lg:leading-[57.87px] pb-[30px]">новости</h1>
+            <button
+                class="lg:hidden p-[10px_20px]  bg-[#FDFDFD] border-[#E4E4E4] border-solid border-[1px] text-[16px] font-[500]">2023
+                <select name="" id=""></select></button>
+        </div>
+        <div class="lg:flex justify-between hidden items-start max-w-[90%] mx-[auto]">
+            <button
+                class="p-[20px_40px] active:bg-[#EFA35A] hover:border-[#EFA35A] bg-[#FDFDFD] border-[#E4E4E4] border-solid border-[1px] text-[24px] font-[400]">2017</button>
+            <button
+                class="p-[20px_40px] active:bg-[#EFA35A] hover:border-[#EFA35A] bg-[#FDFDFD] border-[#E4E4E4] border-solid border-[1px] text-[24px] font-[400]">2018</button>
+            <button
+                class="p-[20px_40px] active:bg-[#EFA35A] hover:border-[#EFA35A] bg-[#FDFDFD] border-[#E4E4E4] border-solid border-[1px] text-[24px] font-[400]">2019</button>
+            <button
+                class="p-[20px_40px] active:bg-[#EFA35A] hover:border-[#EFA35A] bg-[#FDFDFD] border-[#E4E4E4] border-solid border-[1px] text-[24px] font-[400]">2020</button>
+            <button
+                class="p-[20px_40px] active:bg-[#EFA35A] hover:border-[#EFA35A] bg-[#FDFDFD] border-[#E4E4E4] border-solid border-[1px] text-[24px] font-[400]">2021</button>
+            <button
+                class="p-[20px_40px] active:bg-[#EFA35A] hover:border-[#EFA35A] bg-[#FDFDFD] border-[#E4E4E4] border-solid border-[1px] text-[24px] font-[400]">2022</button>
+            <button
+                class="p-[20px_40px] active:bg-[#EFA35A] hover:border-[#EFA35A] bg-[#FDFDFD] border-[#E4E4E4] border-solid border-[1px] text-[24px] font-[400]">2023</button>
+        </div>
+
+    </header>
+    <main>
+        <section
+            class=" max-w-[90%] my-[30px] flex flex-col-reverse gap-[30px] lg:justify-center lg:items-center lg:flex-row mx-[auto] border-solid border-[1px] border-[#EFA35A]">
+            <aside class="lg:w-[40%] "><img src="./my_img/Rectangle 117.png" alt=""></aside>
+            <aside class="flex flex-col lg:flex-col-reverse lg:w-[60%] ">
+                <p id="text-gradient-hover" class="hidden lg:block hover:translate-x-[2px] hover:translate-y-[-2px] transition-all duration-[0.3s] ease-in-out text-[24px] font-[400] text-[#EFA359] py-[10px] cursor-pointer">Читать далее</p>
+                <p class="hidden lg:block text-[24px] lg:w-[560px] font-[400]">По данным Всероссийского центра изучения
+                    общественного мнения — 68%
+                    горожан хотели бы переехать в частный дом</p>
+                <p
+                    class="text-[14px] lg-text-[20px] font-[400] flex lg:py-[20px] gap-[10px] items-center text-[#414753]">
+                    <img src="./my_img/ph_clock-light.png" alt="">01.06.2023
+                </p>
+                <h1 class="lg:block lg:text-[35px] lg:w-[560px] text-[16px] font-[500]">10 причин, почему вам нужно
+                    поменять квартиру
+                    на
+                    таунхаус</h1>
+            </aside>
+        </section>
+        <section
+            class=" max-w-[90%] my-[30px] flex flex-col-reverse gap-[30px] lg:justify-center lg:items-center lg:flex-row mx-[auto] border-solid border-[1px] border-[#EFA35A]">
+            <aside class="lg:w-[40%] "><img src="./my_img/Rectangle 117 (1).png" alt=""></aside>
+            <aside class="flex flex-col lg:flex-col-reverse lg:w-[60%] ">
+                <p id="text-gradient-hover" class="hidden hover:translate-x-[2px] hover:translate-y-[-2px] transition-all duration-[0.3s] ease-in-out lg:block text-[24px] font-[400] text-[#EFA359] py-[10px] cursor-pointer">Читать далее</p>
+                <p class="hidden lg:block text-[24px] lg:w-[560px] font-[400]">По данным Всероссийского центра изучения
+                    общественного мнения — 68%
+                    горожан хотели бы переехать в частный дом</p>
+                <p
+                    class="text-[14px] lg-text-[20px] font-[400] flex lg:py-[20px] gap-[10px] items-center text-[#414753]">
+                    <img src="./my_img/ph_clock-light.png" alt="">01.06.2023
+                </p>
+                <h1 class="lg:block lg:text-[35px] lg:w-[560px] text-[16px] font-[500]">10 причин, почему вам нужно
+                    поменять квартиру
+                    на
+                    таунхаус</h1>
+            </aside>
+        </section>
+        <section
+            class=" max-w-[90%] my-[30px] flex flex-col-reverse gap-[30px] lg:justify-center lg:items-center lg:flex-row mx-[auto] border-solid border-[1px] border-[#EFA35A]">
+            <aside class="lg:w-[40%] "><img src="./my_img/Rectangle 117 (2).png" alt=""></aside>
+            <aside class="flex flex-col lg:flex-col-reverse lg:w-[60%] ">
+                <p id="text-gradient-hover" class="hidden hover:translate-x-[2px] hover:translate-y-[-2px] transition-all duration-[0.3s] ease-in-out lg:block text-[24px] font-[400] text-[#EFA359] py-[10px] cursor-pointer">Читать далее</p>
+                <p class="hidden lg:block text-[24px] lg:w-[560px] font-[400]">По данным Всероссийского центра изучения
+                    общественного мнения — 68%
+                    горожан хотели бы переехать в частный дом</p>
+                <p
+                    class="text-[14px] lg-text-[20px] font-[400] flex lg:py-[20px] gap-[10px] items-center text-[#414753]">
+                    <img src="./my_img/ph_clock-light.png" alt="">01.06.2023
+                </p>
+                <h1 class="lg:block lg:text-[35px] lg:w-[560px] text-[16px] font-[500]">10 причин, почему вам нужно
+                    поменять квартиру
+                    на
+                    таунхаус</h1>
+            </aside>
+        </section>
+        <section
+            class=" max-w-[90%] my-[30px] flex flex-col-reverse gap-[30px] lg:justify-center lg:items-center lg:flex-row mx-[auto] border-solid border-[1px] border-[#EFA35A]">
+            <aside class="lg:w-[40%] "><img src="./my_img/Rectangle 117 (3).png" alt=""></aside>
+            <aside class="flex flex-col lg:flex-col-reverse lg:w-[60%] ">
+                <p id="text-gradient-hover" class="hidden hover:translate-x-[2px] hover:translate-y-[-2px] transition-all duration-[0.3s] ease-in-out lg:block text-[24px] font-[400] text-[#EFA359] py-[10px] cursor-pointer">Читать далее</p>
+                <p class="hidden lg:block text-[24px] lg:w-[560px] font-[400]">По данным Всероссийского центра изучения
+                    общественного мнения — 68%
+                    горожан хотели бы переехать в частный дом</p>
+                <p
+                    class="text-[14px] lg-text-[20px] font-[400] flex lg:py-[20px] gap-[10px] items-center text-[#414753]">
+                    <img src="./my_img/ph_clock-light.png" alt="">01.06.2023
+                </p>
+                <h1 class="lg:block lg:text-[35px] lg:w-[560px] text-[16px] font-[500]">10 причин, почему вам нужно
+                    поменять квартиру
+                    на
+                    таунхаус</h1>
+            </aside>
+        </section>
+
+        <section
+            class=" max-w-[90%] my-[30px] flex flex-col-reverse gap-[30px] lg:justify-center lg:items-center lg:flex-row mx-[auto] border-solid border-[1px] border-[#EFA35A]">
+            <aside class="lg:w-[40%] "><img src="./my_img/Rectangle 117 (5).png" alt=""></aside>
+            <aside class="flex flex-col lg:flex-col-reverse lg:w-[60%] ">
+                <p id="text-gradient-hover" class="hidden hover:translate-x-[2px] hover:translate-y-[-2px] transition-all duration-[0.3s] ease-in-out lg:block text-[24px] font-[400] text-[#EFA359] py-[10px] cursor-pointer">Читать далее</p>
+                <p class="hidden lg:block text-[24px] lg:w-[560px] font-[400]">По данным Всероссийского центра изучения
+                    общественного мнения — 68%
+                    горожан хотели бы переехать в частный дом</p>
+                <p
+                    class="text-[14px] lg-text-[20px] font-[400] flex lg:py-[20px] gap-[10px] items-center text-[#414753]">
+                    <img src="./my_img/ph_clock-light.png" alt="">01.06.2023
+                </p>
+                <h1 class="lg:block lg:text-[35px] lg:w-[560px] text-[16px] font-[500]">10 причин, почему вам нужно
+                    поменять квартиру
+                    на
+                    таунхаус</h1>
+            </aside>
+        </section>
+        <section
+            class=" max-w-[90%] my-[30px] flex flex-col-reverse gap-[30px] lg:justify-center lg:items-center lg:flex-row mx-[auto] border-solid border-[1px] border-[#EFA35A]">
+            <aside class="lg:w-[40%] "><img src="./my_img/Rectangle 117 (6).png" alt=""></aside>
+            <aside class="flex flex-col lg:flex-col-reverse lg:w-[60%] ">
+                <p id="text-gradient-hover" class="hidden hover:translate-x-[2px] hover:translate-y-[-2px] transition-all duration-[0.3s] ease-in-out lg:block text-[24px] font-[400] text-[#EFA359] py-[10px] cursor-pointer">Читать далее</p>
+                <p class="hidden lg:block text-[24px] lg:w-[560px] font-[400]">По данным Всероссийского центра изучения
+                    общественного мнения — 68%
+                    горожан хотели бы переехать в частный дом</p>
+                <p
+                    class="text-[14px] lg-text-[20px] font-[400] flex lg:py-[20px] gap-[10px] items-center text-[#414753]">
+                    <img src="./my_img/ph_clock-light.png" alt="">01.06.2023
+                </p>
+                <h1 class="lg:block lg:text-[35px] lg:w-[560px] text-[16px] font-[500]">10 причин, почему вам нужно
+                    поменять квартиру
+                    на
+                    таунхаус</h1>
+            </aside>
+        </section>
+        <section
+            class=" max-w-[90%] my-[30px] flex flex-col-reverse gap-[30px] lg:justify-center lg:items-center lg:flex-row mx-[auto] border-solid border-[1px] border-[#EFA35A]">
+            <aside class="lg:w-[40%] "><img src="./my_img/Rectangle 117 (7).png" alt=""></aside>
+            <aside class="flex flex-col lg:flex-col-reverse lg:w-[60%] ">
+                <p id="text-gradient-hover" class="hidden hover:translate-x-[2px] hover:translate-y-[-2px] transition-all duration-[0.3s] ease-in-out lg:block text-[24px] font-[400] text-[#EFA359] py-[10px] cursor-pointer">Читать далее</p>
+                <p class="hidden lg:block text-[24px] lg:w-[560px] font-[400]">По данным Всероссийского центра изучения
+                    общественного мнения — 68%
+                    горожан хотели бы переехать в частный дом</p>
+                <p
+                    class="text-[14px] lg-text-[20px] font-[400] flex lg:py-[20px] gap-[10px] items-center text-[#414753]">
+                    <img src="./my_img/ph_clock-light.png" alt="">01.06.2023
+                </p>
+                <h1 class="lg:block lg:text-[35px] lg:w-[560px] text-[16px] font-[500]">10 причин, почему вам нужно
+                    поменять квартиру
+                    на
+                    таунхаус</h1>
+            </aside>
+        </section>
+        <div class="flex px-[20px] max-w-[900px] mx-[auto] justify-between">
+            <button
+                class="lg:p-[20px_40px] p-[10px_15px] lg:text-[24px] text-[14px] text-[#6E6E6F] font-[400] bg-white border-[#6e6e6e] flex items-center gap-[10px] border-[1px] border-solid "><img
+                    src="./my_img/formkit_left.png" alt="">Пред.</button>
+            <button
+                class="lg:p-[20px_40px] p-[10px_20px]  lg:text-[24px] text-[14px]  bg-[#FDFDFD] font-[400] active:bg-[#EFA35A] hover:border-[#EFA35A] border-[1px] border-solid ">1</button>
+            <button
+                class="lg:p-[20px_40px] p-[10px_20px] lg:text-[24px] text-[14px]  bg-[#FDFDFD] font-[400] active:bg-[#EFA35A] hover:border-[#EFA35A] border-[1px] border-solid ">2</button>
+            <button
+                class="hidden lg:block p-[20px_40px] lg:text-[24px] text-[14px]  bg-[#FDFDFD] font-[400] active:bg-[#EFA35A] hover:border-[#EFA35A] border-[1px] border-solid ">3</button>
+            <button
+                class="hidden lg:block p-[20px_40px] lg:text-[24px] text-[14px]  bg-[#FDFDFD] font-[400] active:bg-[#EFA35A] hover:border-[#EFA35A] border-[1px] border-solid ">4</button>
+            <button
+                class="lg:p-[20px_40px] p-[10px_15px] lg:text-[24px] text-[14px]  font-[400] bg-white active:bg-[#EFA35A] hover:border-[#EFA35A] flex items-center gap-[10px] border-[1px] border-solid ">След.<img
+                    src="./my_img/formkit_right.png" alt=""></button>
+        </div>
+    </main>
+    <footer class="bg-[#323232]">
+        <div class="w-[90%] m-auto py-[50px] text-white flex items-start justify-between">
+            <ul class="hidden text-[24px] font-[400] lg:flex flex-col gap-[10px]">
+                <h1 class="text-[30px] font-[700] border-b-[1px] uppercase border-b-[#EFA359]">О компании</h1>
+                <li class="hover:text-[lightgray] cursor-pointer"><a href="">Главная</a></li>
+                <li class="hover:text-[lightgray] cursor-pointer"><a href="">Наша команда</a></li>
+                <li class="hover:text-[lightgray] cursor-pointer"><a href="">СМИ о нас</a></li>
+                <li class="hover:text-[lightgray] cursor-pointer"><a href="">Отзывы</a></li>
+                <li class="hover:text-[lightgray] cursor-pointer"><a href="">Новости</a></li>
+                <li class="hover:text-[lightgray] cursor-pointer"><a href="">Контакты</a></li>
+            </ul>
+            <ul class="hidden text-[24px] font-[400] lg:flex flex-col gap-[10px]">
+                <h1 class="text-[30px] font-[700] border-b-[1px] uppercase border-b-[#EFA359]">проекты</h1>
+                <li class="cursor-pointer hover:text-[lightgray]"><a href="">Изумрудный Village</a></li>
+                <li class="cursor-pointer hover:text-[lightgray]"><a href="">Зимняя горка</a></li>
+                <li class="cursor-pointer hover:text-[lightgray]"><a href="">Константиновка</a></li>
+                <li class="cursor-pointer hover:text-[lightgray]"><a href="">Усады Village</a></li>
+                <li class="cursor-pointer hover:text-[lightgray]"><a href="">IQ-CLUB</a></li>
+            </ul>
+            <ul class="text-[24px] font-[400] hidden lg:flex flex-col gap-[10px]">
+                <h1 class="text-[30px] font-[700] border-b-[1px] uppercase border-b-[#EFA359]">Ипотека</h1>
+                <li class="cursor-pointer hover:text-[lightgray]">Ипотечные кредиты</li>
+                <li class="cursor-pointer hover:text-[lightgray]">Для семей с детьми</li>
+                <li class="cursor-pointer hover:text-[lightgray]">Военная ипотека</li>
+                <li class="cursor-pointer hover:text-[lightgray]">Господдержка 2023</li>
+            </ul>
+            <div class="grid grid-cols-[60px_144px] gap-[50px] grid-rows-[60px_50px] lg:flex flex-col lg:gap-[20px]">
+                <img src="./Photo/windom logo 3.png" alt="">
+                <div class="text-[28px] text-white flex items-center gap-[20px]">
+                    <div style="transition: all 0.2s ease;" onclick="location.href='https://www.youtube.com/?themeRefresh=1'" class="w-[45px] hover:rounded-[8px] hover:scale-[1.2] hover:bg-[#414753] cursor-pointer h-[45px] border-[1px] border-white flex justify-center items-center"><i class="hover:scale-[1.2] transition-all duration-[0.2s] ease-in-out hover:text-[#EFA359] fa-brands fa-youtube"></i></div>
+                    <div style="transition: all 0.2s ease;" onclick="location.href='https://vk.com/'" class="w-[45px] hover:scale-[1.2] hover:rounded-[8px] hover:bg-[#414753] cursor-pointer h-[45px] border-[1px] border-white flex justify-center items-center"><i class="hover:scale-[1.2] hover:text-[#EFA359] transition-all duration-[0.2s] ease-in-out fa-brands fa-vk"></i></div>
+                    <div style="transition: all 0.2s ease;" onclick="location.href='https://ru.linkedin.com/'" class="w-[45px] hover:scale-[1.2] hover:rounded-[8px] hover:bg-[#414753] cursor-pointer h-[45px] border-[1px] border-white flex justify-center items-center"><i class="hover:scale-[1.2] transition-all duration-[0.2s] ease-in-out hover:text-[#EFA359] fa-brands fa-linkedin-in"></i></div>
+                    <div style="transition: all 0.2s ease;" onclick="location.href='https://www.whatsapp.com/'" class="w-[45px] hover:scale-[1.2] hover:rounded-[8px] hover:bg-[#414753] cursor-pointer h-[45px] border-[1px] border-white flex justify-center items-center"><i class="hover:scale-[1.2] hover:text-[#EFA359] transition-all duration-[0.2s] ease-in-out fa-brands fa-whatsapp"></i></div>
+                </div>
+                <div style="transition: all 0.3s ease;" class="lg:w-[237px] w-[242px] hover:shadow-[-6px_6px_10px_#EFA359] hover:translate-x-[5px] hover:translate-y-[-5px] h-[44px] lg:h-[50px] flex pl-[10px] lg:pl-[20px] gap-[10px] lg:gap-[18px] items-center border-[1px] border-white">
+                    <i class="text-white text-[25px] lg:text-[30px] fa-regular fa-envelope"></i>
+                    <p class="lg:text-[14px] text-[14px] font-[400]">windom.kazan@gmail.com</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+</body>
+
+</html>
