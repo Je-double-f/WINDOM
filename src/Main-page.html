@@ -25,6 +25,14 @@
             background-size: 500%;
             animation: gradientShift 6s infinite linear;
         }
+        #text-gradient{
+            color: transparent;
+            background: radial-gradient(circle, #323232, #323232, #EFA35A, #EFA35A, #EFA35A, #EFA35A);
+            background-clip: text;
+            -webkit-background-clip: text;
+            background-size: 400%;
+            animation: gradientShift 8s infinite linear;
+        }
 
         @keyframes gradientShift {
             0% {background-position: 0% 0%;}
@@ -98,8 +106,28 @@
         </section>
     </header>
 
-    <main>
-        
+    <main class="bg-[#FFFFFF] my-[20px] lg:my-[100px]">
+        <section class="lg:w-[90%] w-[80%] mx-auto relative">
+            <img src="./Photo/Rectangle 112.png" alt="" class="lg:inline hidden absolute z-[0]">
+            <img src="./Photo/Rectangle 112-new.png" alt="absolute z-[0] lg:hidden">
+            <aside class="bg-white hidden py-[80px] lg:flex gap-[30px] px-[20px] flex-col items-start text-center w-[522px] relative z-[1] left-[140px] top-[-440px] hover:scale-[1.05] transition-all duration-[0.3s] ease-in-out">
+                <h1 class="text-[24px] font-[400] leading-[28px]">Вы можете обратиться к нашим менеджерам по любому вопросу</h1>
+                <div class="flex pl-[50px] items-center gap-[20px]">
+                    <i id="text-gradient" class="text-[30px] fa-solid fa-location-dot"></i>
+                    <p class="text-[30px] font-[400]">г.Казань, ул.Яркая 31 Б</p>
+                </div>
+                <div class="flex pl-[50px] items-center gap-[20px]">
+                    <i id="text-gradient" class="text-[30px] fa-regular fa-clock"></i>
+                    <p class="text-[30px] font-[400]">Пн-Сб: с 9:00 до 18:00</p>
+                </div>
+                <div class="flex pl-[50px] items-center gap-[20px]">
+                    <i id="text-gradient" class="text-[30px] fa-solid fa-phone"></i>
+                    <p class="text-[30px] font-[400]">+7 (962) 555-25-25</p>
+                </div>
+                <button id="text-gradient-hover" style="transition: all 0.2s ease;" class="self-center hover:scale-[0.96] cursor-pointer border-[1px] font-[700] text-[14px] lg:text-[18px] text-white bg-[#EFA359] border-[#EFA359] lg:w-[236px] h-[46px] lg:h-[53px]">Проложить маршрут</button>
+            </aside>
+        </section>
     </main>
+    
 </body>
 </html>
