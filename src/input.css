@@ -1,3 +1,12 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+
+
+.header{
+    background-image: url("./img/Rectangle 37.png");
+    background-repeat: no-repeat;
+    background-size: 100%;
+
+}
